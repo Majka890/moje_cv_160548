@@ -1,5 +1,6 @@
 /* Ogólne stylowanie */
 body {
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     background-color: #f4f7fc;
     margin: 0;
