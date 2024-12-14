@@ -1,0 +1,68 @@
+/* Ogólne stylowanie */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nagłówek z informacjami osobistymi */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.personal-info h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+/* Sekcje */
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job h3 {
+    margin: 0;
+    color: #3498db;
+}
+
+/* Lista umiejętności i języków */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    color: #34495e;
+}
