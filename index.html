@@ -1,172 +1,194 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona - CV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #e6f7ff; /* Błękitne tło */
-            margin: 0;
-            padding: 0;
-            color: #333; /* Kolor tekstu */
-        }
-        header {
-            background-color: #f8c4d4; /* Brudny róż */
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #d9a3b5;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joanna Maj - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-        .profile-header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
+    header {
+      background-color: #2c3e50;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
 
-        .profile-pic {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid #d9a3b5;
-        }
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .personal-info h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: 600;
-            color: #333;
-        }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #ecf0f1;
+      margin-bottom: 15px;
+    }
 
-        .personal-info p {
-            margin: 5px 0;
-            font-size: 14px;
-            color: #555;
-        }
+    .personal-info h1 {
+      margin: 0;
+      font-size: 26px;
+    }
 
-        section {
-            padding: 20px;
-        }
+    .personal-info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
 
-        section h2 {
-            font-size: 20px;
-            color: #fff;
-            background-color: #f8c4d4; /* Brudny róż */
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-        }
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-        .job, .soft-skills ul, .hard-skills ul, .languages ul {
-            background-color: #ffffff;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+    section h2 {
+      font-size: 22px;
+      border-bottom: 2px solid #2980b9;
+      color: #2c3e50;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
 
-        .job h3 {
-            margin: 0;
-            font-size: 18px;
-            font-weight: 600;
-        }
+    .job, .summary, ul {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
 
-        .job p {
-            margin: 5px 0;
-            font-size: 14px;
-            color: #555;
-        }
+    .job h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #2980b9;
+    }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+    .job p {
+      margin: 10px 0;
+      font-size: 15px;
+    }
 
-        ul li {
-            font-size: 14px;
-            color: #555;
-            margin: 5px 0;
-        }
-        .experience {
-            text-align: center;
-        }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #555;
+    }
 
-        .soft-skills {
-            text-align: center;
-        }
+    ul li {
+      margin-bottom: 8px;
+    }
 
-        .hard-skills {
-            text-align: center;
-        }
+    /* Responsive adjustments */
+    @media screen and (max-width: 600px) {
+      header {
+        padding: 15px;
+      }
 
-        .languages {
-            text-align: center;
-        }
-    </style>
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+
+      .personal-info h1 {
+        font-size: 22px;
+      }
+
+      .personal-info p {
+        font-size: 14px;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
+
+      .job, .summary, ul {
+        padding: 15px;
+      }
+
+      section h2 {
+        font-size: 20px;
+      }
+
+      .job h3 {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="profile-header">
+      <img src="bobak.jfif" alt="Zdjęcie profilowe" class="profile-pic"/>
+      <div class="personal-info">
+        <h1>Joanna Maj</h1>
+        <p>Frontend Developer</p>
+        <p>Warszawa, Polska | joanna.maj@example.com | +48 123 456 789</p>
+      </div>
+    </div>
+  </header>
 
-    <!-- Nagłówek z informacjami osobistymi -->
-    <header>
-        <div class="profile-header">
-            <img src="bobak.jfif" alt="Zdjęcie profilowe" class="profile-pic">
-            <div class="personal-info">
-                <h1>Joanna Maj</h1>
-                <p>Programista Frontend</p>
-                <p>Warszawa, Polska</p>
-            </div>
-        </div>
-    </header>
+  <section class="summary">
+    <h2>Podsumowanie Zawodowe</h2>
+    <p>Doświadczona frontend developerka z pasją do tworzenia przejrzystych, responsywnych interfejsów użytkownika. Specjalizuję się w React, JavaScript i projektowaniu zorientowanym na użytkownika.</p>
+  </section>
 
-    <!-- Sekcja doświadczenia zawodowego -->
-    <section class="experience">
-        <h2>Doświadczenie Zawodowe</h2>
-        <div class="job">
-            <h3>Frontend Developer</h3>
-            <p><strong>Apple</strong> - 2020 - obecnie</p>
-            <p>Tworzenie nowoczesnych aplikacji webowych w JavaScript i React.</p>
-        </div>
-        <div class="job">
-            <h3>Junior Developer</h3>
-            <p><strong>Microsoft</strong> - 2018 - 2020</p>
-            <p>Praca z HTML, CSS, JavaScript przy tworzeniu stron internetowych.</p>
-        </div>
-    </section>
+  <section>
+    <h2>Doświadczenie Zawodowe</h2>
 
-    <!-- Sekcja umiejętności miękkich -->
-    <section class="soft-skills">
-        <h2>Umiejętności Miękkie</h2>
-        <ul>
-            <li>Komunikatywność</li>
-            <li>Praca w zespole</li>
-            <li>Zarządzanie czasem</li>
-            <li>Rozwiązywanie problemów</li>
-        </ul>
-    </section>
+    <div class="job">
+      <h3>Frontend Developer – Apple</h3>
+      <p><strong>2020 – obecnie</strong></p>
+      <ul>
+        <li>Tworzenie aplikacji React z wykorzystaniem styled-components.</li>
+        <li>Testowanie z React Testing Library i Jest.</li>
+        <li>Współpraca z zespołami UX i backend w projektach globalnych.</li>
+      </ul>
+    </div>
 
-    <!-- Sekcja umiejętności twardych -->
-    <section class="hard-skills">
-        <h2>Umiejętności Twarde</h2>
-        <ul>
-            <li>JavaScript, React</li>
-            <li>HTML, CSS, SCSS</li>
-            <li>Node.js, Express</li>
-            <li>Git, GitHub</li>
-        </ul>
-    </section>
+    <div class="job">
+      <h3>Junior Developer – Microsoft</h3>
+      <p><strong>2018 – 2020</strong></p>
+      <ul>
+        <li>Tworzenie widoków w HTML, CSS, JavaScript.</li>
+        <li>Praca w zespole SCRUM, integracja z REST API.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Sekcja języków obcych -->
-    <section class="languages">
-        <h2>Języki Obce</h2>
-        <ul>
-            <li>Angielski: B2</li>
-            <li>Hiszpański: A1</li>
-        </ul>
-    </section>
+  <section>
+    <h2>Umiejętności Miękkie</h2>
+    <ul>
+      <li>Komunikacja i współpraca zespołowa</li>
+      <li>Zarządzanie czasem</li>
+      <li>Kreatywność i inicjatywa</li>
+    </ul>
+  </section>
 
+  <section>
+    <h2>Umiejętności Twarde</h2>
+    <ul>
+      <li>JavaScript, React, TypeScript</li>
+      <li>HTML, CSS, SCSS</li>
+      <li>Node.js, Git, REST API</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Języki Obce</h2>
+    <ul>
+      <li>Angielski – B2</li>
+      <li>Hiszpański – A1</li>
+    </ul>
+  </section>
 </body>
 </html>
